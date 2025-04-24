@@ -29,4 +29,6 @@ The E-Learning Platform UI is a strong example of how effective and engaging use
 # OUTPUT
 
 
+![Image](https://github.com/user-attachments/assets/588a8964-7c35-49c6-86ba-19cd2a2bac79)
+
 
