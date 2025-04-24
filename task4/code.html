@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="brand">E-Learning</a>
+    </nav>
+
+    <!-- Home Page: Course List -->
+    <div class="container" id="home-page">
+        <h1>Available Courses</h1>
+        <div class="course-grid">
+            <div class="course-card" onclick="showCourse(1)">
+                <h2>AWS Fundamentals</h2>
+                <p>Progress: <span id="progress-1">0</span>%</p>
+                <div class="progress-bar"><div id="bar-1"></div></div>
+                <button class="button">View Course</button>
+            </div>
+            <div class="course-card" onclick="showCourse(2)">
+                <h2>React Basics</h2>
+                <p>Progress: <span id="progress-2">0</span>%</p>
+                <div class="progress-bar"><div id="bar-2"></div></div>
+                <button class="button">View Course</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Details -->
+    <div class="container" id="course-details">
+        <h1 id="course-title"></h1>
+        <ul class="lesson-list" id="lesson-list"></ul>
+        <button class="button" onclick="goBack()">Back to Courses</button>
+    </div>
+
+    <!-- Lesson Video -->
+    <div class="container" id="lesson-content">
+        <h1 id="lesson-title"></h1>
+        <iframe id="lesson-video" class="video-frame" src="" title="Lesson Video" allowfullscreen></iframe>
+        <button class="button" onclick="markLessonComplete()">Mark as Completed</button>
+        <button class="button" onclick="goBackToCourse()">Back to Course</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
